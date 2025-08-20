@@ -6,15 +6,9 @@ Description of the data and file structure
 
 The database represents the extent of the floating canopy of M. pyrifera along the Chilean part of the Humboldt Current System and its seasonal variation from summer 2016 to summer 2015.
 
-Variable Name
-
-Description
-
-Data Type
-
+Variable Name: Data Type;
 Unit/Format
-
-Example
+Description
 
 season: Categorical (Factor); 
 Text (Fall, Winter, Spring, Summer) 
@@ -42,24 +36,21 @@ yearqtr: Numeric (Yearqtr)
 YYYY.q
 A combined representation of the year and quarter for time series analysis.
 
-centroid: Geometry (SF object)
-POINT (lon lat)
-The geometric center of the geographic feature (likely a grid cell) represented as a point in a coordinate system.
 
 lat: Numeric
 Decimal degrees (WGS84)
-The latitude of the observation's centroid.
+The latitude coordinate
 
 lon: Numeric
 Decimal degrees (WGS84)
-The longitude of the observation's centroid.
+The longitude coordinate
 
 X: Numeric
-Easting Meters EPSG:32719
+Easting Kilometers EPSG:32719
 The Easting coordinate in a projected coordinate system (likely UTM Zone 19S, EPSG:32719).
 
 Y: Numeric
-Northing Meters EPSG:32719
+Northing Kilometers EPSG:32719
 The Northing coordinate in a projected coordinate system (likely UTM Zone 19S, EPSG:32719).
 
 
@@ -75,18 +66,18 @@ Description: Code to analyze the spatiotemporal database of the floating canopy
 
 File: MP_data
 
-Description: Data used to model the spatiotemporal variation of the floating canopy of M. pyrifera
+Description: Data in format RDS, used to model the spatiotemporal variation of the floating canopy of M. pyrifera
+
+File: MP_data.csv
+
+Description: Data in format csv, used to model the spatiotemporal variation of the floating canopy of M. pyrifera
 
 Code/software
 
 Data collection and processing was carried out using R and Google Earth Engine.
 
-Access information
-
-Other publicly accessible locations of the data:
-
+https://code.earthengine.google.com/fc06f412d7b0d57b53765e29d82e11e2?hl=es-419
 
 
 Data was derived from the following sources:
-
-https://code.earthengine.google.com/b9e498f597356f9094061abd3f5bf094
+Sentinel-2
